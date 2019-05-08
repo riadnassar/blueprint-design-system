@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Components</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Permanent+Marker&amp;subset=latin-ext" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="logo">Blueprint</div>
+			<nav class="primary-nav">
+				
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="style.html">Style</a></li>
+					<li><a class="current-page" href="">Components</a></li>
+					<li><a href="layout.html">Layout</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			
+			<h1>Blueprint Components</h1>
+
+			<h2>Button Links</h2>
+
+			<h3>Hero Buttons</h3>
+
+			<figure>
+				<a class="hero-button" href="">Button</a>
+			</figure>
+
+			<h3>Normal Button</h3>
+
+			<figure>
+				<a class="normal-button" href="">Button</a>
+			</figure>
+
+			<h3>Ghost Buttons</h3>
+
+			<figure>
+				<a class="ghost-button" href="">Button</a>
+			</figure>
+
+			<h2>Accordions</h2>
+
+			<figure>
+				<details class="accordion">
+					<summary>Option 1:</summary>
+
+					<div>
+
+						<p>Lorum Ispum</p>
+
+					</div>
+
+				</details>
+
+				<details class="accordion">
+					<summary>Option 2:</summary>
+					
+					<div>
+
+						<p>Lorum Ispum</p>
+
+					
+					</div>
+				</details>
+
+				<details class="accordion">
+					<summary>Option 3:</summary>
+					
+					<div>
+
+						<p>Lorum Ispum</p>
+
+					</div>
+
+				</details>
+			</figure>
+
+			<h2>Modal Dialog</h2>
+
+			<figure>
+				
+				<button id="open-modal" type="button">Open Modal</button>
+
+				<dialog id="modal-demo">
+
+					<h6>This is a Modal</h6>
+
+					<p>It appears when you least expect it.</p>
+
+				</dialog>
+
+			</figure>
+
+			<h2>Form Inputs</h2>
+
+			<figure>
+				
+				<form action="">
+
+					<h5>Text Field</h5>
+
+					<label for="text">Text</label>
+					<p class="helper-text helper">This is what helper text looks like in light theme</p>
+					<input type="text" id="text" name="text" placeholder="Put in text.">
+
+					<label for="disabled-text">Disabled Text</label>
+					<input type="text" id="disabled-text" name="disabled-text" placeholder="Can't put in text." disabled>
+
+					<label for="error-text">Error Text</label>
+					<input type="text" id="error-text" name="error-text" placeholder="Put in text." class="error">
+
+					<h5>Text Area</h5>
+
+					<label for="textarea">Textarea</label>
+					<textarea id="textarea" name="textarea" placeholder="Put even more text here."></textarea>
+
+					<label for="disabled-textarea">Disabled Textarea</label>
+					<textarea id="disabled-textarea" name="diabled-textarea" placeholder="Can't put even more text here." disabled></textarea>
+
+					<label for="error-textarea">Error Textarea</label>
+					<textarea id="error-textarea" name="error-textarea" placeholder="Put even more text here." class="error"></textarea>
+
+					<h5>Select</h5>
+
+					<label for="select">Select</label>
+					<select id="select" name="select">
+						<option value="" selected disabled hidden>Select one</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+
+					<label for="disabled-select">Disabled Select</label>
+					<select id="disabled-select" name="disabled-select" disabled>
+						<option value="" selected disabled hidden>Select one</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+
+					<label for="error-select">Error Select</label>
+					<select id="error-select" name="error-select" class="error">
+						<option value="" selected disabled hidden>Select one</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+					
+					<h5>Submit/Button</h5>
+
+					<input type="submit" value="Submit">
+
+				</form>
+
+			</figure>
+
+			<h2>Navigation</h2>
+
+			<h3>Primary Navigation</h3>
+
+			<figure>
+					<nav class="primary-nav">
+					
+						<ul>
+							<li><a href="#">Page 1</a></li>
+							<li><a href="#">Page 2</a></li>
+							<li><a class="current-page" href="#">Page 3 (Current Page)</a></li>
+							<li><a href="#">Page 4</a></li>
+						</ul>
+					</nav>
+				</header>
+			</figure>
+
+			<h3>Secondary Navigation</h3>
+
+			<figure>
+				<footer>
+					<nav class="secondary-nav">
+						<ul>
+							<li><a href="">Link 1</a>
+								<ul>
+									<li><a href="">Link 1a</a></li>
+								</ul>
+							</li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="">Link 3</a></li>
+						</ul>
+					</nav>
+				</footer>
+			</figure>
+
+			<h2>Notification</h2>
+			
+			<h3>Error</h3>
+			<figure>
+				<div class="notification notification-error featured-text">
+					<img src="image/note-error.jpg">
+					<p>This is an Error notification</p>
+				</div>
+			</figure>
+			
+			<h3>Warning</h3>
+			<figure>
+				<div class="notification notification-warning featured-text">
+					<img src="image/note-warning.jpg">
+					<p>This is a Warning notification</p>
+				</div>
+			</figure>
+			
+			<h3>Neutral</h3>
+			<figure>
+				<div class="notification notification-neutral featured-text">
+					<img src="image/note-neutral.jpg">
+					<p>This is a Nuetral notification</p>
+				</div>
+			</figure>
+			
+			<h3>Success</h3>
+			<figure>
+				<div class="notification notification-success featured-text">
+					<img src="image/note-success.jpg">
+					<p>This is a Success notification</p>
+				</div>
+			</figure>
+
+			<h2>Hero Block</h2>
+
+			<figure>
+				<a href="hero-example.html"><img src="image/hero-image.png" alt="hero block example"></a>
+			</figure>
+
+			<h2>Information Cards</h2>
+			
+			<h3>Portfolio Item</h3>
+			
+			<figure>
+				<a class="portfolio-item" href="#">
+					<div class="info-card">
+						<h6>Title</h6>
+						<p>Description of the item</p>
+					</div>
+					<img src="image/under-construction.jpg" alt="Under Construction">
+				</a>
+			</figure>
+			
+			<h3>Call to Action</h3>
+			
+			<figure>
+				<div class="call-to-action">
+					<p class="featured-text">Example of a Call to action</p>
+					<img src="image/under-construction.jpg" alt="Under Construction">
+					<a class="hero-button" href="">Click Now</a>
+				</div>
+			</figure>
+
+		</main>
+
+		<footer class="tertiary-text">
+			
+			<p>Blueprint Design System was created by Riad Nassar. Any similarities to other design systems is purely coincidental.</p>
+
+			<p>Riad Nassar is a User Experience Designer. He has an interest in Interaction Design, especially Human-Robot Interaction. He has a background in Psychology and Computer Science. When he's not designing, he likes to Judge local Robotics Competitions.</p>
+
+			<nav class="secondary-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="style.html">Style</a></li>
+					<li><a href="components.html">Components</a></li>
+					<li><a href="layout.html">Layout</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Copyright -->
+			<p>Copyright 2019. All rights reserved</p>
+
+		</footer>
+
+		<script>
+			
+			document.addEventListener('DOMContentLoaded', function(){
+
+				const modal = document.querySelector('dialog');
+				const open = document.getElementById('open-modal');
+
+				open.addEventListener('click', () => {
+					modal.showModal();
+				});
+
+				modal.addEventListener('click', event => {
+					if (event.target === modal) {
+						modal.close('cancelled');
+					}
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
