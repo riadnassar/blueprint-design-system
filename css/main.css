@@ -405,6 +405,7 @@ details {
 details div {
 	margin: 1rem;
 }
+
 summary {
 	padding-left: 1rem;
 }
@@ -517,6 +518,7 @@ dialog::backdrop {
 form {
 	border: 0.125rem solid var(--color-secondary-dark);
 	border-radius: 0.625rem;
+	padding: 1rem;
 }
 
 label {
@@ -540,8 +542,10 @@ button, input[type="submit"] {
 }
 
 textarea {
+	box-sizing: border-box;
 	min-height: 5rem;
-	min-width: 25rem;
+	max-width: 100%;
+	width: 25rem;
 }
 
 button:focus, input:focus, textarea:focus, select:focus {
